@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49883447261",
+    "project_id": "eind-a8289",
+    "storage_bucket": "eind-a8289.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49883447261:android:76be514dc0409d49ab8034",
+        "android_client_info": {
+          "package_name": "com.example.digishool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49883447261-8hsam0rgfb5pf7f1r742jjps18gv4t61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMEp_ER5eMl9xhvL36rJ_exOj8X6yCsuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49883447261-8hsam0rgfb5pf7f1r742jjps18gv4t61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

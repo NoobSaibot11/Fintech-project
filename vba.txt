@@ -1,0 +1,89 @@
+Sub CreateAndroidAppPresentation()
+    Dim pptApp As Object
+    Dim pptPres As Object
+    Dim slideIndex As Integer
+    
+    ' Create a new instance of PowerPoint application
+    Set pptApp = CreateObject("PowerPoint.Application")
+    pptApp.Visible = True
+    
+    ' Create a new presentation
+    Set pptPres = pptApp.Presentations.Add
+    
+    ' Slide 1: Title Slide
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 1) ' 1 denotes ppLayoutTitle
+        .Shapes(1).TextFrame.TextRange.Text = "Welcome to Our Android App for Learning"
+        .Shapes(2).TextFrame.TextRange.Text = "Buy Courses, Pay Fees, and Interact Seamlessly!"
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\1.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 2: Introduction
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2) ' 2 denotes ppLayoutText
+        .Shapes(1).TextFrame.TextRange.Text = "Introduction"
+        .Shapes(2).TextFrame.TextRange.Text = "Our Android app revolutionizes learning! With us, you can access a plethora of courses, interact with teachers, and pay your fees hassle-free."
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\2.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 3: Buying and Selling Courses
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Buy and Sell Courses"
+        .Shapes(2).TextFrame.TextRange.Text = "Browse through our extensive collection of courses. Click on 'Buy' to purchase a course or 'Sell' to offer your own expertise."
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\3.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 4: Making Payments
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Secure Payments"
+        .Shapes(2).TextFrame.TextRange.Text = "Pay your fees securely within the app. Whether it's tuition fees to the school or payments to individual teachers, our app ensures safe transactions."
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\4.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 5: Student and Teacher Logins
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Customized Experience"
+        .Shapes(2).TextFrame.TextRange.Text = "Enjoy a tailored experience based on your role. Students can access course materials and pay fees, while teachers can manage courses and receive payments."
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\5.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 6: Backend Control
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Firewall Database Security"
+        .Shapes(2).TextFrame.TextRange.Text = "Rest assured, our app's backend is fortified by a firewall database. Your data remains protected at all times, ensuring confidentiality and integrity."
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\6.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 7: Get Started Today!
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Join Us Now!"
+        .Shapes(2).TextFrame.TextRange.Text = "Don't miss out on the opportunity to revolutionize your learning experience. Download our app today and embark on a journey of knowledge and growth!"
+        ' Add image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\7.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Slide 8: Contact Us
+    slideIndex = slideIndex + 1
+    With pptPres.Slides.Add(slideIndex, 2)
+        .Shapes(1).TextFrame.TextRange.Text = "Have Questions?"
+        .Shapes(2).TextFrame.TextRange.Text = "For any inquiries or assistance, feel free to reach out to us. We're here to help!"
+        ' Add contact information and image
+        .Shapes.AddPicture "C:\Users\Majahar\Desktop\Majahar\College\TY\Sem 6\fintech\images\8.jpeg", False, True, 100, 100, 500, 300
+    End With
+    
+    ' Clean up
+    Set pptPres = Nothing
+    Set pptApp = Nothing
+End Sub
+
